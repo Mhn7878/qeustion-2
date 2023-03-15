@@ -3,7 +3,12 @@ public abstract class Element {
     private int atomicNumber;
     private double atomicWeight;
 
-    public String getSymbol() {
+    public Element(String symbol, int atomicNumber, double atomicWeight) {
+        this.symbol = symbol;
+        this.atomicNumber = atomicNumber;
+        this.atomicWeight = atomicWeight;
+    }
+        public String getSymbol() {
         return symbol;
     }
 
@@ -14,10 +19,6 @@ public abstract class Element {
     public double getAtomicWeight() {
         return atomicWeight;
     }
+    public abstract void describeElement();
 
-    public Element(String symbol, int atomicNumber, double atomicWeight) {
-        this.symbol = symbol;
-        this.atomicNumber = atomicNumber;
-        this.atomicWeight = atomicWeight;
-    }
 }
