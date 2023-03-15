@@ -5,6 +5,7 @@ public class NonMetalElement extends  Element{
 
     @Override
     public void describeElement() {
+        System.out.println(getSymbol() +  " " +  getAtomicNumber() + " " +  getAtomicWeight());
         System.out.println("nonmetals are poor conductors");
     }
 }

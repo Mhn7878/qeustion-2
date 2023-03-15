@@ -5,6 +5,7 @@ public class MetalElement extends  Element {
 
     @Override
     public void describeElement() {
+        System.out.println(getSymbol() +  " " +  getAtomicNumber() + " " +  getAtomicWeight());
         System.out.println("good conductors of electricity");
     }
 }
